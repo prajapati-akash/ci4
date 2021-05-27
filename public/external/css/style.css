@@ -1,0 +1,26 @@
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+/*change logo or name font style*/
+.logo-font
+{
+	font-size: 40px;
+	font-weight: bold;
+	font-family: initial;
+}
+/*margin between dropdown and table field*/
+.custom-style
+{
+	margin-top: 90px;
+}
+
+.required
+{
+	color:red;
+}

@@ -1,0 +1,486 @@
+ERROR - 30-03-2021 11:35:52 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 11:37:10 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 11:38:33 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 11:47:12 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 11:50:52 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 11:53:39 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 11:55:37 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 11:58:02 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 11:59:50 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 12:10:02 --> Error connecting to the database: No route to host
+ERROR - 30-03-2021 12:11:02 --> Error connecting to the database: No route to host
+ERROR - 30-03-2021 12:11:25 --> Error connecting to the database: Connection refused
+ERROR - 30-03-2021 12:19:45 --> mysqli_sql_exception: Table 'akashp_core.table_name' doesn't exist in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(798): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-062927_Users.php(31): CodeIgniter\Database\Forge->addColumn()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\Users->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 12:20:01 --> mysqli_sql_exception: Duplicate column name 'blog_id' in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(798): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-062927_Users.php(31): CodeIgniter\Database\Forge->addColumn()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\Users->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 12:20:34 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 12:20:41 --> mysqli_sql_exception: Duplicate column name 'blog_id' in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(798): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-062927_Users.php(31): CodeIgniter\Database\Forge->addColumn()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\Users->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 12:20:55 --> mysqli_sql_exception: Duplicate column name 'blog_id' in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(798): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-062927_Users.php(31): CodeIgniter\Database\Forge->addColumn()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\Users->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 12:22:40 --> mysqli_sql_exception: Duplicate column name 'blog_id' in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(798): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-062927_Users.php(31): CodeIgniter\Database\Forge->addColumn()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\Users->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 12:23:13 --> mysqli_sql_exception: Duplicate column name 'blog_id' in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(798): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-065302_Users.php(31): CodeIgniter\Database\Forge->addColumn()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\Users->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 12:23:42 --> mysqli_sql_exception: Table 'akashp_core.blog' doesn't exist in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(798): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-065302_Users.php(31): CodeIgniter\Database\Forge->addColumn()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\Users->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 12:24:10 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 12:24:59 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 12:26:26 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 12:26:27 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 12:26:29 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 12:26:31 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 12:36:46 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 13:01:06 --> mysqli_sql_exception: Table 'user_data' already exists in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(747): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-070822_Users.php(52): CodeIgniter\Database\Forge->renameTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\Users->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 13:01:24 --> mysqli_sql_exception: Table 'user_data' already exists in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(747): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-070822_Users.php(52): CodeIgniter\Database\Forge->renameTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\Users->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 13:01:28 --> mysqli_sql_exception: Table 'user_data' already exists in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(747): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-070822_Users.php(52): CodeIgniter\Database\Forge->renameTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\Users->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 13:05:22 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 13:07:18 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 13:07:47 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 13:14:16 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 13:16:17 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 13:30:03 --> mysqli_sql_exception: Table 'akashp_core.candidate' doesn't exist in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1966): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Model.php(570): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/BaseModel.php(1140): CodeIgniter\Model->countAllResults()
+#6 /var/www/html/akash/cipractical/app/Models/Candidate.php(30): CodeIgniter\BaseModel->paginate()
+#7 /var/www/html/akash/cipractical/app/Controllers/Dashboard.php(37): App\Models\Candidate->show()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Dashboard->ajaxrequest()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/akash/cipractical/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/var/www/html/a...')
+#13 {main}
+ERROR - 30-03-2021 13:37:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,0) NOT NULL DEFAULT 1,
+	CONSTRAINT `pk_user` PRIMARY KEY(`id`)
+) DEFAULT CHARA' at line 11 in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(525): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-075504_User.php(59): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\User->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 13:37:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,0) NOT NULL DEFAULT 1,
+	CONSTRAINT `pk_user` PRIMARY KEY(`id`)
+) DEFAULT CHARA' at line 11 in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(525): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-075504_User.php(58): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\User->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 13:38:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,0) NOT NULL DEFAULT 1,
+	CONSTRAINT `pk_user` PRIMARY KEY(`id`)
+) DEFAULT CHARA' at line 11 in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(525): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-075504_User.php(58): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\User->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 13:38:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,0) NOT NULL DEFAULT 1,
+	CONSTRAINT `pk_user` PRIMARY KEY(`id`)
+) DEFAULT CHARA' at line 11 in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(525): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-075504_User.php(58): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\User->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(118): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(91): CodeIgniter\CLI\BaseCommand->call()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#15 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#16 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#17 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#18 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#19 {main}
+ERROR - 30-03-2021 13:39:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1,0) NOT NULL DEFAULT 1,
+	CONSTRAINT `pk_user` PRIMARY KEY(`id`)
+) DEFAULT CHARA' at line 11 in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(525): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-075504_User.php(58): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\User->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(118): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(91): CodeIgniter\CLI\BaseCommand->call()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#15 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#16 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#17 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#18 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#19 {main}
+ERROR - 30-03-2021 13:40:07 --> mysqli_sql_exception: Invalid default value for 'created_at' in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(525): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-075504_User.php(58): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\User->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 13:40:27 --> mysqli_sql_exception: Invalid default value for 'created_at' in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(525): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-075504_User.php(58): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\User->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 30-03-2021 13:42:52 --> mysqli_sql_exception: Invalid default value for 'created_at' in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(525): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-075504_User.php(58): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\User->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(118): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(91): CodeIgniter\CLI\BaseCommand->call()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#15 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#16 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#17 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#18 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#19 {main}
+ERROR - 30-03-2021 13:44:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CURRENT_TIMESTAMP NOT NULL,
+	`updated_at` CURRENT_TIMESTAMP NOT NULL,
+	`deleted_' at line 8 in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(525): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-075504_User.php(56): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\User->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(118): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(91): CodeIgniter\CLI\BaseCommand->call()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#15 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#16 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#17 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#18 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#19 {main}
+ERROR - 30-03-2021 13:44:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CURRENT_TIMESTAMP NOT NULL,
+	`updated_at` CURRENT_TIMESTAMP NOT NULL,
+	`deleted_' at line 8 in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/Forge.php(525): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/app/Database/Migrations/2021-03-30-075504_User.php(56): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(1057): App\Database\Migrations\User->up()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(118): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(91): CodeIgniter\CLI\BaseCommand->call()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#14 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#15 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#16 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#17 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#18 /var/www/html/akash/cipractical/spark(66): CodeIgniter\CLI\Console->run()
+#19 {main}
+ERROR - 30-03-2021 13:45:55 --> mysqli_sql_exception: Table 'akashp_core.candidate' doesn't exist in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1966): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Model.php(570): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/BaseModel.php(1140): CodeIgniter\Model->countAllResults()
+#6 /var/www/html/akash/cipractical/app/Models/Candidate.php(30): CodeIgniter\BaseModel->paginate()
+#7 /var/www/html/akash/cipractical/app/Controllers/Dashboard.php(37): App\Models\Candidate->show()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Dashboard->ajaxrequest()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/akash/cipractical/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/var/www/html/a...')
+#13 {main}
+ERROR - 30-03-2021 14:02:54 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 14:03:01 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 14:03:29 --> Error connecting to the database: Class 'SQLite3' not found
+ERROR - 30-03-2021 16:22:49 --> mysqli_sql_exception: Duplicate entry '29' for key 'PRIMARY' in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/BaseModel.php(758): CodeIgniter\Model->doInsert()
+#6 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/akash/cipractical/app/Models/User.php(97): CodeIgniter\Model->insert()
+#8 /var/www/html/akash/cipractical/app/Controllers/Login.php(58): App\Models\User->profile_update()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->index()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/akash/cipractical/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/var/www/html/a...')
+#14 {main}

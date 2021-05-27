@@ -1,0 +1,17 @@
+{
+    "name": "google/login",
+    "description": "Login with google in cipractical",
+    "require-dev": {
+        "composer/composer": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "Akshay Shah",
+            "email": "akshays@websoptimization.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "^2.0",
+        "phpmailer/phpmailer": "^6.3"
+    }
+}

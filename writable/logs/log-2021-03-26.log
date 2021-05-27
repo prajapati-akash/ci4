@@ -1,0 +1,96 @@
+ERROR - 26-03-2021 10:42:34 --> mysqli_sql_exception: Table 'akashp_core.dsa' doesn't exist in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/akash/cipractical/app/Models/User.php(146): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/akash/cipractical/app/Controllers/Api/UserController.php(22): App\Models\User->api_show()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Api\UserController->index()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/akash/cipractical/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/var/www/html/a...')
+#13 {main}
+ERROR - 26-03-2021 14:01:35 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`akashp_core`.`candidate`, CONSTRAINT `candidate_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `user` (`id`)) in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/BaseModel.php(1009): CodeIgniter\Model->doDelete()
+#6 /var/www/html/akash/cipractical/app/Models/User.php(158): CodeIgniter\BaseModel->delete()
+#7 /var/www/html/akash/cipractical/app/Controllers/Api/UserController.php(109): App\Models\User->api_delete()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Api\UserController->delete()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/akash/cipractical/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/var/www/html/a...')
+#13 {main}
+ERROR - 26-03-2021 14:03:20 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`akashp_core`.`candidate`, CONSTRAINT `candidate_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `user` (`id`)) in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/BaseModel.php(1009): CodeIgniter\Model->doDelete()
+#6 /var/www/html/akash/cipractical/app/Models/User.php(158): CodeIgniter\BaseModel->delete()
+#7 /var/www/html/akash/cipractical/app/Controllers/Api/UserController.php(109): App\Models\User->api_delete()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Api\UserController->delete()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/akash/cipractical/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/var/www/html/a...')
+#13 {main}
+ERROR - 26-03-2021 14:03:21 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`akashp_core`.`candidate`, CONSTRAINT `candidate_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `user` (`id`)) in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/BaseModel.php(1009): CodeIgniter\Model->doDelete()
+#6 /var/www/html/akash/cipractical/app/Models/User.php(158): CodeIgniter\BaseModel->delete()
+#7 /var/www/html/akash/cipractical/app/Controllers/Api/UserController.php(109): App\Models\User->api_delete()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Api\UserController->delete()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/akash/cipractical/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/var/www/html/a...')
+#13 {main}
+ERROR - 26-03-2021 14:04:42 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`akashp_core`.`candidate`, CONSTRAINT `candidate_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `user` (`id`)) in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/BaseModel.php(1009): CodeIgniter\Model->doDelete()
+#6 /var/www/html/akash/cipractical/app/Models/User.php(158): CodeIgniter\BaseModel->delete()
+#7 /var/www/html/akash/cipractical/app/Controllers/Api/UserController.php(109): App\Models\User->api_delete()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Api\UserController->delete()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/akash/cipractical/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/var/www/html/a...')
+#13 {main}
+ERROR - 26-03-2021 14:04:43 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`akashp_core`.`candidate`, CONSTRAINT `candidate_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `user` (`id`)) in /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2864): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Model.php(422): CodeIgniter\Database\BaseBuilder->delete()
+#5 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/BaseModel.php(1009): CodeIgniter\Model->doDelete()
+#6 /var/www/html/akash/cipractical/app/Models/User.php(158): CodeIgniter\BaseModel->delete()
+#7 /var/www/html/akash/cipractical/app/Controllers/Api/UserController.php(109): App\Models\User->api_delete()
+#8 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Api\UserController->delete()
+#9 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/akash/cipractical/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/akash/cipractical/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/var/www/html/a...')
+#13 {main}
