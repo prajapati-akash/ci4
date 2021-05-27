@@ -34,8 +34,8 @@ class Dashboard extends BaseController
 
 			$data = [
 		        'showdata' => $this->candidate->show($status , $language , $pageno),
-		        'pager'    => $this->candidate->pager,
-		        'status'   => $this->request->getPost('status'),
+		        'pager' => $this->candidate->pager,
+		        'status' => $this->request->getPost('status'),
 		        'language' => $this->request->getPost('language'),
 	        ];
 	   		return  view("candidate/ajax/showdata", $data);
